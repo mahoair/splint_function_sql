@@ -1,5 +1,5 @@
 
---verilen stringi virgül ile ayırarak tablo yapar!!!
+--verilen stringi virgül ile ayırarak tablo yapar!!!!!!
 CREATE FUNCTION dbo.split
 (
 	@str AS VARCHAR(max),
