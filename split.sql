@@ -1,5 +1,5 @@
 
-
+--verilen stringi virgÃ¼l ile ayÄ±rarak tablo yapar
 CREATE FUNCTION dbo.split
 (
 	@str AS VARCHAR(max),
@@ -32,11 +32,11 @@ BEGIN
 RETURN 
 END
 
-SELECT * FROM dbo.split('ömer,ahmet,dadasdas,ythjgj,564545,osman,mehmet,mahmut',',')
+SELECT * FROM dbo.split('Ã¶mer,ahmet,dadasdas,ythjgj,564545,osman,mehmet,mahmut',',')
 
 
 
-DECLARE @a INT = charindex(',','ömer,ahmet,osman,mehmet,mahmut')
-DECLARE @item AS VARCHAR(max) = substring('ömer,ahmet,osman,mehmet,mahmut',0,@a)
+DECLARE @a INT = charindex(',','Ã¶mer,ahmet,osman,mehmet,mahmut')
+DECLARE @item AS VARCHAR(max) = substring('Ã¶mer,ahmet,osman,mehmet,mahmut',0,@a)
 PRINT @item
 
